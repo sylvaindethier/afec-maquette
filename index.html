@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maquette AFEC</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/header-layout.css" />
+    <link rel="stylesheet" href="css/header-style.css" />
+    <link rel="stylesheet" href="css/card-layout.css" />
+    <link rel="stylesheet" href="css/card-style.css" />
+    <link rel="stylesheet" href="css/footer-layout.css" />
+    <link rel="stylesheet" href="css/footer-style.css" />
+    <style type="text/css">
+      /* Give HEADER, CARDS, FOOTER some space around */
+      header.header {
+        margin-bottom: 2rem;
+      }
+      main.container {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+      footer.footer {
+        margin-top: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- !HEADER -->
+    <header class="header header-image">
+      <div class="container">
+        <!-- Main Nav -->
+        <main class="main">
+          <div class="logo">
+            <a href=""
+              ><img src="assets/logo-afec.png" width="117" height="70"
+            /></a>
+          </div>
+          <nav class="nav">
+            <div class="menu-burger">
+              <label for="menu-burger_show">
+                <img
+                  src="assets/menu-burger_white.svg"
+                  alt="menu"
+                  height="37"
+                  width="37"
+                />
+              </label>
+              <input
+                id="menu-burger_show"
+                name="menu-burger_show"
+                type="checkbox"
+                style="display: none"
+              />
+            </div>
+            <ul class="nav-list">
+              <li class="list-item"><a href="">Évènements</a></li>
+              <li class="list-item"><a href="">Formations</a></li>
+              <li class="list-item"><a href="">Nos campus</a></li>
+              <li class="list-item"><a href="">Notre offre</a></li>
+              <li class="list-item"><a href="">L' AFEC recrute</a></li>
+              <li class="list-item"><a href="">Actualités</a></li>
+              <li class="list-item"><a href="">Qui sommes-nous</a></li>
+            </ul>
+          </nav>
+          <a href="" class="btn text-uppercase">Nous contacter</a>
+        </main>
+
+        <!-- Breadcrumbs Nav -->
+        <aside class="aside --header-breadcrumbs--nav">
+          <nav class="nav">
+            <ol class="nav-list">
+              <li class="list-item"><a href="">Acceuil</a></li>
+              <li class="list-item"><a href="">Centre</a></li>
+              <li class="list-item"><a href="">Île-de-France</a></li>
+              <li class="list-item"><a href="">Cergy</a></li>
+            </ol>
+          </nav>
+        </aside>
+      </div>
+    </header>
+    <!-- !\HEADER -->
+
+    <!-- !CARDS -->
+    <main class="container grid-container">
+      <!-- Card 1 -->
+      <figure id="card-1" class="card grid-item">
+        <figcaption class="card--container">
+          <a href="">
+            <span class="card--content">
+              <span class="card--tag"
+                >Services à la personne - Sanitaire et social</span
+              >
+              <span class="card--title"
+                >Alternance – TP Assistant(e) de Vie aux Familles</span
+              >
+              <span class="card--duration icon-before">10 mois</span>
+              <span class="card--level icon-before"
+                >Niveau 3 (équivalent à un CAP)</span
+              >
+              <span class="card--more icon-after">En savoir plus</span>
+            </span>
+          </a>
+        </figcaption>
+      </figure>
+
+      <!-- Card 2 -->
+      <figure id="card-2" class="card grid-item">
+        <figcaption class="card--container">
+          <a href="">
+            <span class="card--content">
+              <span class="card--tag"
+                >Services à la personne - Sanitaire et social</span
+              >
+              <span class="card--title"
+                >CAP Accompagnant Éducatif Petite Enfance</span
+              >
+              <span class="card--duration icon-before">10 mois</span>
+              <span class="card--level icon-before">Niveau 3</span>
+              <span class="card--more icon-after">En savoir plus</span>
+            </span>
+          </a>
+        </figcaption>
+      </figure>
+
+      <!-- Card 3 -->
+      <figure id="card-3" class="card grid-item">
+        <figcaption class="card--container">
+          <a href="">
+            <span class="card--content">
+              <span class="card--tag">Commerce - Vente</span>
+              <span class="card--title">TP Conseiller Commercial</span>
+              <span class="card--duration icon-before">5 mois</span>
+              <span class="card--level icon-before"
+                >Niveau 4 (équivalent BAC)</span
+              >
+              <span class="card--more icon-after">En savoir plus</span>
+            </span>
+          </a>
+        </figcaption>
+      </figure>
+
+      <!-- Card 4 -->
+      <figure id="card-4" class="card grid-item">
+        <figcaption class="card--container">
+          <a href="">
+            <span class="card--content">
+              <span class="card--tag">Comptabilité - Gestion - Assistanat</span>
+              <span class="card--title"
+                >Alternance - TP Gestionnaire de Paie</span
+              >
+              <span class="card--duration icon-before">10 mois</span>
+              <span class="card--level icon-before"
+                >Niveau 5 (équivalent BAC+2)</span
+              >
+              <span class="card--more icon-after">En savoir plus</span>
+            </span>
+          </a>
+        </figcaption>
+      </figure>
+
+      <!-- Card 5 -->
+      <figure id="card-5" class="card grid-item">
+        <figcaption class="card--container">
+          <a href="">
+            <span class="card--content">
+              <span class="card--tag"
+                >Service à la personne - Sanitaire et social</span
+              >
+              <span class="card--title"
+                >TP Secrétaire Assistant(e) Médico-Social(e)</span
+              >
+              <span class="card--duration icon-before">6 mois</span>
+              <span class="card--level icon-before"
+                >Niveau 4 (équivalent BAC)</span
+              >
+              <span class="card--more icon-after">En savoir plus</span>
+            </span>
+          </a>
+        </figcaption>
+      </figure>
+
+      <!-- Card 6 -->
+      <figure id="card-6" class="card grid-item">
+        <figcaption class="card--container">
+          <a href="">
+            <span class="card--content">
+              <span class="card--tag">Comptabilité - Gestion - Assistanat</span>
+              <span class="card--title">TP Secrétaire Comptable</span>
+              <span class="card--duration icon-before">7 mois</span>
+              <span class="card--level icon-before"
+                >Niveau 4 (équivalent BAC)</span
+              >
+              <span class="card--more icon-after">En savoir plus</span>
+            </span>
+          </a>
+        </figcaption>
+      </figure>
+    </main>
+    <!-- !\CARDS -->
+
+    <!-- !FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="column column-1 column-contact">
+          <h4 class="column-title">Restons en contact</h4>
+          <div class="contact-button">
+            <a class="contact-button--link" href="">Nous contacter</a>
+          </div>
+          <div class="contact-social">
+            <a href=""><img alt="facebook" src="../assets/facebook.png" /></a>
+            <a href=""><img alt="linkedin" src="../assets/linkedin.png" /></a>
+            <a href=""><img alt="instagram" src="../assets/instagram.png" /></a>
+          </div>
+        </div>
+        <div class="column column-2 column-afec">
+          <h4 class="column-title">Groupe AFEC</h4>
+          <ul>
+            <li class="footer-nav">
+              <a href="">Formations</a>
+            </li>
+            <li class="footer-nav">
+              <a href="">Centres de formation</a>
+            </li>
+            <li class="footer-nav">
+              <a href="">Offres d'emploi</a>
+            </li>
+          </ul>
+        </div>
+        <div class="column column-3 column-prestations">
+          <h4 class="column-title">Prestations</h4>
+          <ul>
+            <li class="footer-nav">
+              <a href="">Évaluations certifications</a>
+            </li>
+            <li class="footer-nav">
+              <a href="">Accompagnement VAE</a>
+            </li>
+            <li class="footer-nav">
+              <a href="">Formations en alternance</a>
+            </li>
+            <li class="footer-nav">
+              <a href="">Formations éligibles FNE</a>
+            </li>
+          </ul>
+        </div>
+        <div class="column column-4 column-about">
+          <h4 class="column-title">À propos</h4>
+          <ul>
+            <li class="footer-nav">
+              <a href="">Talent School</a>
+            </li>
+            <li class="footer-nav">
+              <a href="">L' AFEC</a>
+            </li>
+            <li class="footer-nav">
+              <a href="">Point F</a>
+            </li>
+            <li class="footer-nav">
+              <a href="">Actualités</a>
+            </li>
+          </ul>
+        </div>
+        <div class="column column-5 column-ressources">
+          <h4 class="column-title">Ressources</h4>
+          <ul>
+            <li class="footer-nav">
+              <a href="">Grille tarifaire</a>
+            </li>
+            <li class="footer-nav">
+              <a href="">CGU</a>
+            </li>
+            <li class="footer-nav">
+              <a href="">CGV</a>
+            </li>
+            <li class="footer-nav">
+              <a href="">Règlement intérieur</a>
+            </li>
+            <li class="footer-nav">
+              <a href="">RGPD</a>
+            </li>
+            <li class="footer-nav">
+              <a href="">Contact du siège</a>
+            </li>
+            <li class="footer-nav">
+              <a href="">Glossaire</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- !\FOOTER -->
+  </body>
+</html>

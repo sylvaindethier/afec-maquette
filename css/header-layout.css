@@ -1,0 +1,90 @@
+/* Reset UL, OL default browser */
+.header ul,
+.header ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --space_v: 1rem 0;
+}
+
+
+.header a {
+  display: inline-block;
+  line-height: 1.25;
+}
+.header .main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .main,
+.header .aside {
+  padding: var(--space_v);
+}
+
+/* Disable .menu-burger. Only show .nav-list */
+.header .nav .menu-burger {
+  display: none;
+}
+.header .nav .nav-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.header .main .logo,
+.header .main .logo a {
+  /* hide (blank) text content if any */
+  line-height: 0;
+}
+/* header main nav links */
+.header .main .nav .list-item {
+  text-align: center;
+  padding: 0 0.5rem;
+  font-size: .9375rem;
+}
+@media (min-width: 1170px) {
+  .header .main .nav .list-item {
+    padding: 0 1rem;
+  }
+}
+
+/* header aside nav links */
+.header .aside .nav .list-item {
+  margin-right: 1.5rem;
+}
+
+/* Mobile device */
+@media (max-width: 1100px) {
+  /* No header aside on mobile device */
+  .header .aside {
+    display: none;
+  }
+
+  /* Nav is first */
+  .header .main .nav {
+    order: 1;
+  }
+  /* Only show .menu-burger */
+  .header .main .nav .menu-burger {
+    border: 1px solid red;
+    display: block;
+  }
+  .header .main .nav .nav-list {
+    display: none;
+  }
+
+  /* Logo is second */
+  .header .main .logo {
+    order: 2;
+  }
+
+  /* Button is last */
+  .header .main .btn {
+    order: 3;
+  }
+}

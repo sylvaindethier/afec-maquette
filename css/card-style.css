@@ -1,0 +1,109 @@
+:root {
+  --color_filter: rgb(0, 22, 61, 0.75);
+  --color_tag: rgb(240, 165, 90);
+  --card_border-radius: 5px 5px 5px 55px;
+}
+
+/* Filter + Image */
+#card-1 {
+  background-image: linear-gradient(var(--color_filter), var(--color_filter)),
+    url("../assets/card--Assistant_Vie.jpg");
+}
+#card-2 {
+  background-image: linear-gradient(var(--color_filter), var(--color_filter)),
+    url("../assets/card--CAP_PE.jpg");
+}
+#card-3 {
+  background-image: linear-gradient(var(--color_filter), var(--color_filter)),
+    url("../assets/card--Conseiller_Commercial.jpg");
+}
+#card-4 {
+  background-image: linear-gradient(var(--color_filter), var(--color_filter)),
+    url("../assets/card--Gestionnaire_Paie.jpg");
+}
+#card-5 {
+  background-image: linear-gradient(var(--color_filter), var(--color_filter)),
+    url("../assets/card--Assistant_MS.jpg");
+}
+#card-6 {
+  background-image: linear-gradient(var(--color_filter), var(--color_filter)),
+    url("../assets/card--Secrétaire_Comptable.jpg");
+}
+.card {
+  background-position: 0 0, 50%;
+  background-size: auto, cover;
+  background-repeat: no-repeat, no-repeat;
+}
+.card--container a {
+  color: white;
+}
+
+/* Card shape */
+.card,
+.card--container a {
+  border-radius: var(--card_border-radius);
+}
+
+/* length */
+/* :root {
+  margin-left: 0.3125rem;
+  border-radius: 0.3125rem;
+  margin-bottom: 0.625rem;
+  padding: 0.3125rem 0.625rem;
+  font-size: 1.375rem;
+  margin-right: 0.625rem;
+} */
+
+.icon-before::before {
+  margin-right: 0.625rem;
+  display: inline;
+  vertical-align: sub;
+}
+.icon-after::after {
+  margin-left: 0.3125rem;
+  display: inline;
+  vertical-align: sub;
+}
+
+/* Arrow icon after show more */
+.card--more.icon-after::after {
+  content: url("../assets/arrow.svg");
+}
+
+.card--tag {
+  background-color: var(--color_tag);
+  border-radius: 0.3125rem;
+  display: inline-block;
+  margin-bottom: 0.625rem;
+  padding: 0.3125rem 0.625rem;
+}
+.card--title {
+  font-size: 1.375rem;
+  font-weight: bold;
+}
+
+/* Duration icon before */
+.card--duration.icon-before::before {
+  content: url("../assets/time-clock.svg");
+}
+/* Level icon before */
+.card--level.icon-before::before {
+  content: url("../assets/level.svg");
+}
+
+/*** DESKTOP ***/
+@media screen and (min-width: 996px) {
+  .card--more {
+    visibility: hidden;
+    opacity: 0;
+    margin-top: -1.375rem;
+    font-weight: bold;
+    text-decoration-line: underline;
+  }
+  .card--container a:hover .card--more {
+    visibility: visible;
+    opacity: 1;
+    margin-top: unset;
+    transition: all 0.5s ease-in;
+  }
+}

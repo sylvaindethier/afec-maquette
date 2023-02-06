@@ -1,0 +1,38 @@
+:root {
+  --color-blue: #00163d;
+}
+
+footer {
+  padding: 80px 0 60px;
+}
+footer .container {
+  display: flex;
+  justify-content: space-around;
+}
+footer .column {
+  margin: 0 1rem;
+}
+
+footer .contact-social {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 1rem;
+  background-color: gray;
+}
+footer .contact-social a {
+  line-height: 0;
+  margin-right: 1rem;
+}
+footer .contact-social a:last-child {
+  margin-right: 0;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+footer .footer-nav {
+  margin-bottom: 0.75rem;
+}

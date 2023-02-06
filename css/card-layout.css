@@ -1,0 +1,88 @@
+/* Reset <figure> default style */
+figure {
+  margin: 0;
+}
+
+:root {
+  --card-gap: 1.875rem;
+  --card-min-height: 16.875rem;
+  --card-height-small: 18.75rem;
+  --card-height-tall: 25rem;
+
+  --space_v: 1rem 0;
+  --space_h: 0 1rem;
+}
+
+
+main.grid-container {
+  display: grid;
+  padding: var(--space_h);
+}
+
+.card {
+  min-height: var(--card-min-height);
+  margin-top: calc(var(--card-gap) / 2);
+  margin-bottom: var(--card-gap);
+}
+
+.card--container, .card--container a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-decoration: none;
+}
+
+:root {
+  --space-big: 1.875rem;
+  --space-bigger: 3.125rem;
+}
+.card--content {
+  position: absolute;
+  bottom: 0;
+  padding: var(--space-big);
+  padding-top: var(--space-bigger);
+}
+.card--content, .card--content > * {
+  display: block;
+}
+
+.card--content > * {
+  margin: 0.625rem auto;
+}
+.card--content > *:first-child {
+  margin-top: 0;
+}
+.card--content > *:last-child {
+  margin-bottom: 0;
+}
+
+/*** DESKTOP ***/
+@media screen and (min-width: 996px) {
+  main.grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: var(--card-gap);
+  }
+
+  .card {
+    height: var(--card-height-small);
+  }
+
+  /* Make odd .card taller, and put them just under the above element */
+  .card:nth-child(odd) {
+    height: var(--card-height-tall);
+    margin-top: calc(var(--card-height-small) - var(--card-height-tall));
+  }
+  /* Unless them who are in odd row */
+  .card:nth-child(1),
+  .card:nth-child(2),
+  .card:nth-child(3) {
+    margin-top: 0;
+  }
+  /* Provide further more cards */
+  .card:nth-child(7),
+  .card:nth-child(8),
+  .card:nth-child(9) {
+    margin-top: 0;
+  }
+}

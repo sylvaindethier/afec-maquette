@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Header Image URL</title>
+    <style>
+      /* RESET */
+      *,
+      ::before,
+      ::after {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+      }
+
+      /* Make body more visible */
+      body {
+        margin: 2rem 0;
+        padding: 2rem 0;
+        background-color: grey;
+        min-height: 100vh;
+      }
+
+      .header-image--img {
+        border-radius: 0 0 0 95px;
+        height: 559px;
+        width: 100%;
+
+        /* using only image */
+        background-image: url("../assets/Cergy_Grand_Centre_Parc_Francois_Mitterrand©L_Pages.jpg");
+        /* full viewport width size */
+        background-size: 100vw;
+        /* alignement */
+        background-position: top -235px right;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header-image--container --unrequired">
+      <div class="header-image--img"></div>
+    </div>
+  </body>
+</html>
